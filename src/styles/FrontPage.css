@@ -1,0 +1,260 @@
+/* Styling for the Front Page Container */
+
+/*
+.front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f0f0, #d4e6f1);
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.front-page h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+
+.front-page p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    background: #3498db;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+.buttons button:active {
+    transform: translateY(1px);
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .front-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .front-page p {
+        font-size: 1rem;
+    }
+
+    .buttons button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .front-page h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons button {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+}
+
+.buttons button {
+    background: #1769cd !important; 
+    color: #ffffff !important;       
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 14px 28px;
+    border: 2px solid #27170b;       
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+    background: #e65c00;  
+    transform: translateY(-2px);
+}
+
+.buttons button:active {
+    transform: translateY(1px);
+}
+
+*/
+
+
+
+
+
+/* Modern Dark Theme for Front Page */
+.front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #121212; /* Dark Background */
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Title Styling */
+.front-page h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Tagline */
+.front-page p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  .buttons button {
+    background-color: #121212;
+    color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .buttons button:hover {
+    background-color: #e5ecff;
+    color: #121212;
+    transform: translateY(-5px);
+  }
+  
+  /* Icons inside buttons */
+  .buttons button .icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-arrow {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+  }
+  
+  .back-arrow:hover {
+    color: #007bff;
+  }
+  
+  .logo {
+    height: 50px;
+    object-fit: contain;
+  }
+
+
+
+
+
+
+
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .buttons {
+      grid-template-columns: 1fr;
+      padding: 20px 15px;
+    }
+  
+    .buttons button {
+      font-size: 1rem;
+      padding: 18px;
+    }
+  
+    .buttons button .icon {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buttons {
+      gap: 15px;
+    }
+  
+    .buttons button {
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 16px;
+    }
+  }
+  

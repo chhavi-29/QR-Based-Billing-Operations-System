@@ -1,0 +1,144 @@
+body{
+  background-color: #121212;
+}
+.admin-panel {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* .admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.admin-logo {
+  height: 50px;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.logout-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.logout-button {
+  padding: 8px 10px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c62828;
+}
+
+.scanqr{
+  background: #1f7a8c;
+  color: #ffffff;
+}
+
+.scanqr{
+  background: #1f7a8c;
+  color: #ffffff;
+  font-size: 1.1rem;
+    padding: 12px 24px;
+    border: 2px solid #0d3b4e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.dashboard-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  color: #1b7fe4;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: #121212;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-card:hover {
+  background-color: #e5ecff;
+  color: #121212;
+  transform: translateY(-5px);
+}
+
+.dashboard-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .dashboard-container h2 {
+      font-size: 1.6rem;
+  }
+
+  .dashboard-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .dashboard-card {
+      font-size: 1rem;
+  }
+
+  .dashboard-card .icon {
+      font-size: 1.6rem;
+  }
+
+  .admin-logo {
+      height: 40px;
+  }
+}

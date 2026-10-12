@@ -1,0 +1,240 @@
+.bill-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #121212; /* Dark Background */
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.bill-page h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #333;
+}
+
+th {
+  background: #1f7a8c;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #292929;
+}
+
+
+/* Button Styling */
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Button Styling (Same Size for All) */
+.bill-button {
+  background: #1f7a8c;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 12px 24px; /* Ensures uniform button size */
+  border: 2px solid #0d3b4e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 220px; /* Ensures all buttons have the same width */
+  text-align: center;
+}
+
+/* .bill-button:hover {
+  background: #ccc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+} */
+
+.bill-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.gst-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.gst-inputs label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gst-inputs input {
+  padding: 5px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#download{
+  background-color: #145c72;
+}
+
+#download :hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  background-color: #0e4252;
+}
+
+#cancel{
+  background-color:#e53935 ;
+}
+
+#cancel :hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  background-color: #42100f;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 60px; /* 👈 Increased spacing between arrow and logo */
+}
+
+.back-arrow {
+  font-size: 100px; /* 👈 Bigger arrow */
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background: none;
+  border: none;
+  transition: color 0.3s;
+  line-height: 1; /* Optional: prevent stretching */
+}
+
+.back-arrow:hover {
+  color: #007bff;
+}
+
+.logo {
+  height: 100px; /* 👈 Bigger logo */
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bill-page h1 {
+      font-size: 2rem;
+  }
+
+  table {
+      width: 100%;
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 8px;
+  }
+
+   .button-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .bill-button {
+      width: 100%; /* Makes buttons full width for better mobile UI */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .bill-page h1 {
+      font-size: 1.8rem;
+  }
+
+  table {
+      font-size: 12px;
+  }
+
+  .button-container {
+      gap: 15px;
+  }
+
+  .bill-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}

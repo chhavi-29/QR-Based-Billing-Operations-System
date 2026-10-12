@@ -1,0 +1,116 @@
+.business-info-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f9fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .business-info-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .business-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .business-info-form label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /*.business-info-form input,
+  .business-info-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+  */
+  .business-info-form input,
+  .business-info-form textarea {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;            /* Ensures it doesn't overflow the parent */
+    max-width: 100%;        /* Prevents it from exceeding container */
+    box-sizing: border-box; /* Includes padding in the width */
+    transition: border-color 0.2s;
+  }
+  
+
+
+
+
+  .business-info-form input:focus,
+  .business-info-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .business-info-form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .business-info-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo-preview {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-label {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  
+
+
+
+
+  
+  @media (max-width: 600px) {
+    .business-info-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .business-info-form button {
+      font-size: 15px;
+    }
+  }
+  

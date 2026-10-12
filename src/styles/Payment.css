@@ -1,0 +1,117 @@
+/* Payment Page Styles */
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #121212; /* Dark Background */
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Title Styling */
+.payment-page h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Subheading */
+.payment-page h2 {
+    font-size: 1.5rem;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+/* Button Container */
+button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common Button Styling */
+.payment-button, .home-btn {
+    background: #1f7a8c;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: 2px solid #0d3b4e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 240px; /* Uniform button width */
+    height: 50px; /* Uniform button height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Payment Button */
+.payment-button {
+    background: #4CAF50;
+    border-color: #388E3C;
+}
+
+/* Home Button */
+.home-btn {
+    background: #007BFF;
+    border-color: #0056b3;
+}
+
+/* Hover Effects */
+.payment-button:hover, .home-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.upi-qr {
+    margin-top: 30px;
+    animation: fadeIn 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upi-qr img {
+    width: 250px;
+    max-width: 90vw;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.upi-qr p {
+    color: #cccccc;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-page h1 {
+        font-size: 2rem;
+    }
+
+    .payment-page h2 {
+        font-size: 1.2rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment-button, .home-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

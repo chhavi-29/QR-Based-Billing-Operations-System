@@ -1,0 +1,151 @@
+/* Container & background */
+.add-admin-wrapper {
+  background-color: #111;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Navbar (kept untouched) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-arrow {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background: none;
+  border: none;
+  transition: color 0.3s;
+}
+
+.back-arrow:hover {
+  color: #007bff;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Form container */
+.add-admin-container {
+  position: relative;
+  max-width: 90%;
+  width: 400px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem 2rem;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-admin-container h2 {
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.add-admin-container input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.add-admin-container input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.add-admin-container button {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.add-admin-container button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.02);
+}
+
+/* Floating Logo */
+.floating-logo {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  background: white;
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Back button */
+.back-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.feedback-message {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.feedback-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.feedback-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .add-admin-container {
+    padding: 2rem 1rem;
+  }
+
+  .add-admin-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .floating-logo {
+    height: 50px;
+    top: -25px;
+  }
+}

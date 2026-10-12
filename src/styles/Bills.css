@@ -1,0 +1,113 @@
+/* Bills Page Styles */
+.bills-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #121212; /* Dark background */
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Title Styling */
+.bills-page h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Bill List Container */
+.bill-list {
+    width: 90%;
+    max-width: 600px;
+    background: #1e1e1e; /* Dark Card */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+/* Individual Bill Items */
+.bill-item {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+.bill-item:last-child {
+    border-bottom: none;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Common Button Styling */
+.bill-button {
+    background: #1f7a8c;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 14px 24px;
+    border: 2px solid #0d3b4e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 240px; /* Ensures uniform size */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Download Button */
+.download-btn {
+    background: #4CAF50;
+    border-color: #388E3C;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Home Button */
+.home-btn {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .bill-list {
+        width: 95%;
+    }
+
+    .bill-item {
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .bill-button {
+        width: 100%; /* Makes buttons full width for better mobile UI */
+    }
+}

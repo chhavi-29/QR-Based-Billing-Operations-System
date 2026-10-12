@@ -1,0 +1,143 @@
+.scanner-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    background: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Home Button */
+.home-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #1769cd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+.home-btn:hover {
+    background-color: #0f4a8a;
+    transform: translateY(-2px);
+}
+
+/* Scanner Box */
+.scanner-box {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1; /* Ensures square shape */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+/* Shopping Cart */
+.cart {
+    width: 90%;
+    max-width: 500px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Cart Items */
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+/* Quantity Buttons */
+.quantity-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    background: #1769cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background: #0f4a8a;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #219150;
+    transform: translateY(-2px);
+}
+
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-arrow {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+  }
+  
+  .back-arrow:hover {
+    color: #007bff;
+  }
+  
+  .logo {
+    height: 50px;
+    object-fit: contain;
+  }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .scanner-box {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cart {
+        width: 95%;
+        padding: 15px;
+    }
+}

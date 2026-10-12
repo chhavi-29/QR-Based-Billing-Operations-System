@@ -1,0 +1,139 @@
+.back-arrow {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-arrow:hover {
+  color: #007bff;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.view-bills-page {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.view-bills-page h1 {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+details{
+  background-color: white;
+}
+
+.bill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bill-card {
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.bill-card:hover {
+  transform: scale(1.01);
+}
+
+.bill-card h3 {
+  background-color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bill-card p {
+  background-color: white;
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.bill-card summary {
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.bill-card ul {
+  background-color: white;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.bill-card li {
+  background-color: white;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .view-bills-page {
+      padding: 10px;
+  }
+
+  .bill-card {
+      padding: 12px;
+  }
+
+  .bill-card h3 {
+      font-size: 18px;
+  }
+
+  .bill-card p,
+  .bill-card li {
+      font-size: 13px;
+  }
+
+  .view-bills-page h1 {
+      font-size: 24px;
+  }
+}
+
+.bill-actions {
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bill-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bill-button.delete {
+  background-color: #e53935;
+}
+
+.bill-button:hover {
+  opacity: 0.9;
+}

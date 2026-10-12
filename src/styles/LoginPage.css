@@ -1,0 +1,154 @@
+
+.login-page h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.login-options button {
+    padding: 10px 16px;
+    margin : 0px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-options button:hover {
+    background-color: #0056b3;
+}
+
+.user-login, .admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page h3{
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: black;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../assets/govigyan_1.jpeg'); /* Set path to your background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.logo {
+    width: 20%;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in;
+}
+
+.login-card {
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(2, 2, 2, 0.375);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* rest of your styles remain unchanged */
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+
+.loader {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #4caf50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+@media (max-width: 480px) {
+    .login-page {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .login-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-options button {
+        width: 100%;
+    }
+}
